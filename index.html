@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración básica de la página -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Título y descripción SEO -->
+  <title>Go Life — Bienestar Premium</title>
+  <meta name="description" content="Go Life — suplementos premium, kits exclusivos y nutrición de lujo con 40% OFF.">
+  
+  <!-- Tipografías de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="styles-premium.css?v=9.0">
+  
+  <!-- Icono de pestaña -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Manifest para PWA -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Color del navegador en móviles -->
+  <meta name="theme-color" content="#ffd700">
+</head>
+<body>
+
+ <!-- Aviso Construccion -->
+  <div style="background-color:#000; color:gold; text-align:center; padding:50px; border:3px solid gold; border-radius:15px; font-family:Arial, sans-serif;">
+  <h1 style="font-size:2.5em; margin-bottom:20px;">🚧 Página en construcción 🚧</h1>
+  <p style="font-size:1.2em;">Estamos trabajando para ofrecerte la mejor experiencia GOLIFE PREMIUM.</p>
+  <p style="margin-top:15px; font-style:italic;">Vuelve pronto para descubrir nuestras novedades.</p>
+</div>
+
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="wrap bar">
+      <!-- Logo -->
+<div class="logo">Go <span>Life</span> Premium</div>      
+      <!-- Botón menú hamburguesa (móvil) -->
+      <button class="hamburger" aria-label="Abrir menú">☰ <span class="sr-only">Menú</span>
+</button>
+      
+      <!-- Navegación principal -->
+      <nav class="cta" aria-label="Navegación principal">
+        <a class="btn" href="index.html" aria-current="page">Inicio</a>
+        <a class="btn" href="productos.html">Productos</a>
+        <a class="btn" href="kits.html">Kits</a>
+        <a class="btn-outline" href="emprender.html">Emprender con Go Life</a>
+        <a class="btn primary" href="https://wa.me/584224654331">WhatsApp</a>
+      </nav>
+      
+      <!-- Icono carrito con contador -->
+     <div class="cart-icon" id="open-cart" role="button" tabindex="0" aria-label="Abrir carrito">
+  🛒 <span id="cart-count">0</span>
+
+</div>
+    </div>
+
+  </header>
+  
+  <!-- Overlay para cerrar menú móvil -->
+  <div class="overlay" onclick="document.body.classList.remove('nav-open')">
+</div>
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <h1 class="title">Bienestar premium con Go Life</h1>
+    <p class="sub">Nutrición, energía y enfoque para tu día a día</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="productos.html">Explorar productos</a>
+      <a class="btn" href="kits.html">Ver Kits exclusivos</a>
+    </div>
+  </section>
+
+  <!-- ================= DESTACADOS ================= -->
+<section class="wrap">
+  <div class="cards-container">
+
+    <!-- Card 1: Nutrek -->
+    <div class="featured-card">
+      <div class="card-img-wrapper">
+        <img src="images/nutrek.webp" alt="Nutrek — suplemento para inmunidad y energía" class="card-img">
+      </div>
+      <div class="body">
+        <span class="pill energia">Energía</span>
+        <h2 class="name">Nutrek</h2>
+        <p>Fórmula avanzada para reforzar defensas y energía sostenida.</p>
+        <div class="price-block">
+          <span class="old-price">USD 100.00</span>
+          <span class="price">USD 60.00</span>
+          <span class="save">Ahorras 40%</span>
+        </div>
+        <div class="qty-selector">
+          <button class="qty-btn minus">−</button>
+          <input type="number" min="1" value="1" class="qty" data-product="Nutrek" data-price="60">
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="btn primary add-to-cart" data-product="Nutrek" data-price="60">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Card 2: ProDairy -->
+    <div class="featured-card">
+      <div class="card-img-wrapper">
+        <img src="images/prodairy.webp" alt="ProDairy — proteína y colágeno premium" class="card-img">
+      </div>
+      <div class="body">
+        <span class="pill reparacion">Reparación</span>
+        <h2 class="name">ProDairy</h2>
+        <p>Proteína y colágeno para piel, cabello y rendimiento diario.</p>
+        <div class="price-block">
+          <span class="old-price">USD 90.00</span>
+          <span class="price">USD 55.00</span>
+          <span class="save">Ahorras 40%</span>
+        </div>
+        <div class="qty-selector">
+          <button class="qty-btn minus">−</button>
+          <input type="number" min="1" value="1" class="qty" data-product="ProDairy" data-price="55">
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="btn primary add-to-cart" data-product="ProDairy" data-price="55">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Card 3: The Coffee Life -->
+    <div class="featured-card">
+      <div class="card-img-wrapper">
+        <img src="images/thecoffeelife.webp" alt="The Coffee Life — café funcional con adaptógenos" class="card-img">
+      </div>
+      <div class="body">
+        <span class="pill adapto">Adaptógeno</span>
+        <h2 class="name">The Coffee Life</h2>
+        <p>Café adaptógeno. Contiene Shiitake, Maitake, Ganoderma y Cordyceps.</p>
+        <div class="price-block">
+          <span class="old-price">USD 80.00</span>
+          <span class="price">USD 47.00</span>
+          <span class="save">Ahorras 40%</span>
+        </div>
+        <div class="qty-selector">
+          <button class="qty-btn minus">−</button>
+          <input type="number" min="1" value="1" class="qty" data-product="The Coffee Life" data-price="47">
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="btn primary add-to-cart" data-product="The Coffee Life" data-price="47">Agregar al carrito</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+     
+      <!-- ================= TESTIMONIOS ================= -->
+<section class="wrap panel">
+  <h2>✨ Lo que dicen nuestros clientes</h2>
+
+  <div class="testis-wrapper">
+    <!-- Carrusel -->
+    <div class="testis-slider">
+
+
+    <!-- Testimonio 1 -->
+    <div class="testi">
+      <img src="images/testi1.jpg" alt="Karina U. — experiencia con Kit Básico" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Antes de tomar el <strong>Kit Básico</strong> tuve por 14 años problemas digestivos. Ahora he mejorado mi salud y la de mi familia."</p>
+      <span class="testi-name">— Karina U.</span>
+    </div>
+    <!-- Testimonio 2 -->
+    <div class="testi">
+      <img src="images/testi2.jpg" alt="Malena L. — mejora con Kit Básico" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Antes tenía ansiedad y reflujo. Tomando <strong>Nutrek, ProDairy y The Coffee Life</strong>, ahora me siento muy bien."</p>
+      <span class="testi-name">— Malena L.</span>
+    </div>
+    <!-- Testimonio 3 -->
+    <div class="testi">
+      <img src="images/testi3.jpg" alt="Andres M. — descanso y energía con The Coffee Life" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Era muy escéptico pero con <strong>The Coffee Life</strong> empecé a descansar de verdad. También me dio energía y me ayudó a perder peso."</p>
+      <span class="testi-name">— Andres M.</span>
+    </div>
+    <!-- Testimonio 4 -->
+    <div class="testi">
+      <img src="images/testi4.jpg" alt="José M. — alivio con ProDairy" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Sufro de psoriasis. <strong>ProDairy</strong> cambió mi vida. Ya soy fiel consumidor."</p>
+      <span class="testi-name">— José M.</span>
+    </div>
+    <!-- Testimonio 5 -->
+    <div class="testi">
+      <img src="images/testi5.jpg" alt="Silvia R. — energía con Kit Básico" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Estaba muy agotada y cuidando a un familiar enfermo. Tomé el <strong>Kit Básico</strong> y algunos encapsulados y eso enseguida elevó mi energía. En mi familia todos lo consumimos. Ahora me siento excelente, llena de vitalidad rejuvenecida, no me enfermo."</p>
+      <span class="testi-name">— Silvia R.</span>
+    </div>
+    <!-- Testimonio 6 -->
+    <div class="testi">
+      <img src="images/testi6.jpg" alt="Delmar G. — recuperación con Kit Básico" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Por un problema de salud perdí mucha masa muscular que no lograba recuperar con nada. Gracias al <strong>Kit Básico</strong> logré recuperarla además de mi autoestima."</p>
+      <span class="testi-name">— Delmar G.</span>
+    </div>
+    <!-- Testimonio 7 -->
+    <div class="testi">
+      <img src="images/testi7.jpg" alt="Aris M. — claridad y energía con Kit Básico" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Dejé atrás la flojera, la somnolencia y la fatiga. Ahora con el <strong>Kit Básico</strong> disfruto de una energía renovada y una claridad mental que nunca había experimentado."</p>
+      <span class="testi-name">— Aris M.</span>
+    </div>
+    <!-- Testimonio 8 -->
+    <div class="testi">
+      <img src="images/testi8.jpg" alt="Ingris A. — vitalidad con The Coffee Life" class="testi-img" loading="lazy" width="200" height="200">
+      <p>"Desde que empecé a tomar <strong>The Coffee Life</strong>, he sentido mucha vitalidad y energía. Ya no puedo imaginar mi vida sin él."</p>
+      <span class="testi-name">— Ingris A.</span>
+    </div>
+  </div>
+     <!-- Overlay de flechas -->
+  <div class="nav-overlay">
+    <button class="slide-btn prev"><span class="chevron chevron-left"></span></button>
+    <button class="slide-btn next"><span class="chevron chevron-right"></span></button>
+  </div>
+</div>
+
+    <!-- CTA debajo de testimonios -->
+    <div class="testis-cta">
+      <a class="btn-outline" href="emprender.html">Crea tu camino con Go Life</a>
+    </div>
+</section>
+</main>
+  
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap">
+      
+      <!-- Navegación secundaria en el footer -->
+      <nav class="footer-nav">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="kits.html">Kits</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="mailto:golifepremium@gmail.com">Contacto</a>
+        <a class="btn primary" href="https://wa.me/584224654331">WhatsApp</a>
+      </nav>
+      
+      <!-- Derechos reservados -->
+      <p>© 2025 Go Life Premium. Todos los derechos reservados.</p>
+      
+      <!-- Aviso legal -->
+      <p class="legal">
+        Este sitio no sustituye asesoría médica profesional. 
+        Consulta a tu especialista antes de iniciar cualquier suplemento.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================= SERVICE WORKER ================= -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado"))
+        .catch(err => console.error("Error al registrar SW:", err));
+    }
+  </script>
+
+  <!-- Script del carrito (funcionalidad JS) -->
+  
+	
+
+<script src="slider.js"></script>
+<script src="testimonios.js"></script>
+
+<!-- ================= CARRITO LATERAL ================= -->
+
+  <!-- Overlay oscuro que aparece detrás del carrito -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+
+  <!-- Panel lateral del carrito (se desliza desde un lado) -->
+  <aside id="cart-panel" class="cart-panel">
+    
+    <!-- Encabezado del carrito -->
+    <div class="cart-header">
+      <h2>🛒 Tu carrito</h2>
+      <!-- Botón para cerrar el carrito -->
+      <button id="close-cart">✖</button>
+    </div>
+
+    <!-- Lista dinámica de productos añadidos al carrito -->
+    <ul id="cart-items"></ul>
+
+<!-- Pie del carrito con total y acciones -->
+    <div class="cart-footer">
+      <!-- Total de la compra -->
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <!-- Botón para vaciar carrito -->
+      <button id="clear-cart" class="btn-outline-gold">Vaciar carrito</button>
+      <!-- Botón para finalizar pedido -->
+      <button id="checkout" class="btn primary">Finalizar pedido</button>
+    </div>
+  </aside>
+
+  <!-- Botón flotante del carrito (único y corregido) -->
+  <button id="floating-cart-button" class="cart-button" aria-label="Abrir carrito flotante">🛒</button>
+
+  <!-- Scripts del carrito y menú -->
+  <script src="cart.js"></script>
+  <script src="menu.js"></script>
+<div id="cart-container"></div>
+<script>
+  fetch("cart.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("cart-container").innerHTML = html;
+      // Una vez insertado el HTML, cargamos el script del carrito
+      const script = document.createElement("script");
+      script.src = "cart.js";
+      document.body.appendChild(script);
+    });
+</script>
+<script src="menu.js"></script>
+</body>
+</html>
+
